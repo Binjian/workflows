@@ -49,6 +49,8 @@ runs:
         else
           pip install -U nbdev
         fi
+        sudo apt install texlive-latex-base
+        pip install -Uq black[jupyter] gitpython cantools ijson InquirerPy scapy pydantic numpy pandas pyx
         echo "Doing editable install..."
         if [ $TORCH_CPU ]; then
           test -f setup.py && pip install -e ".[dev]" --extra-index-url https://download.pytorch.org/whl/cpu
