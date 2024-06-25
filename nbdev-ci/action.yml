@@ -50,7 +50,7 @@ runs:
           pip install -U nbdev
         fi
         pip install -Uq black[jupyter] gitpython cantools ijson InquirerPy scapy pydantic numpy pandas pyx
-        sudo apt install libsdl2-dev
+        sudo apt install libsdl2-dev texlive-base
         pip install -Uq git+https://github.com/binjian/IDQL.git
         echo "Doing editable install..."
         if [ $TORCH_CPU ]; then
