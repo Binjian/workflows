@@ -50,6 +50,7 @@ runs:
           pip install -U nbdev
         fi
         pip install -Uq black[jupyter] gitpython cantools ijson InquirerPy scapy pydantic numpy pandas pyx
+        pip install -Uq git+https://github.com/binjian/IDQL.git
         echo "Doing editable install..."
         if [ $TORCH_CPU ]; then
           test -f setup.py && pip install -e ".[dev]" --extra-index-url https://download.pytorch.org/whl/cpu
