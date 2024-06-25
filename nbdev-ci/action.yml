@@ -50,6 +50,7 @@ runs:
           pip install -U nbdev
         fi
         pip install -Uq black[jupyter] gitpython cantools ijson InquirerPy scapy pydantic numpy pandas pyx
+        sudo apt-get update && sudo apt update --fix-missing
         sudo apt install libsdl2-dev
         pip install -Uq git+https://github.com/binjian/IDQL.git
         echo "Doing editable install..."
