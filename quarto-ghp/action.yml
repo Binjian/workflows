@@ -45,6 +45,7 @@ runs:
         else
           pip install -Uq nbdev
         fi
+        sudo apt-get update
         sudo apt install texlive-latex-base
         pip install -Uq black[jupyter] gitpython cantools ijson InquirerPy scapy pydantic numpy pandas pyx
         if [ $TORCH_CPU ]; then
