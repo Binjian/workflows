@@ -55,6 +55,7 @@ runs:
         else
           test -f setup.py && pip install -e ".[dev]"
         fi
+        pip install git+https://github.com/Binjian/IDQL.git
         echo "Check we are starting with clean git checkout"
         if [[ `git status --porcelain -uno` ]]; then
           git diff
